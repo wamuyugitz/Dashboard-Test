@@ -1,0 +1,30 @@
+.app {
+  flex: 1;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-image: url(./assets/images/bg_pattern.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.app::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.714);
+}
+.app-container {
+  position: relative;
+  z-index: 12;
+}
+
+@media (max-width: 992px) {
+  .app {
+    max-height: 100vh;
+  }
+}

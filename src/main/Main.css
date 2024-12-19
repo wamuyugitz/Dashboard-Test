@@ -1,0 +1,29 @@
+.main {
+  flex: 0.97;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.component-body::-webkit-scrollbar {
+  display: none;
+}
+
+.component-card-container {
+  border-radius: 10px;
+  /* margin: 10px 10px 0px; */
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    margin-bottom: 12vh;
+    width: 100vw;
+    max-height: 90vh;
+    display: flex;
+  }
+  .main > .container > .row {
+    justify-content: center;
+  }
+}

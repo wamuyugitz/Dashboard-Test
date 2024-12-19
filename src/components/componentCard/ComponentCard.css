@@ -1,0 +1,83 @@
+.component-card {
+  background-color: #ffffffb6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  /* padding: 20px; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  height: 234px;
+  position: relative;
+}
+
+.component-card-container {
+  position: relative;
+  height: 234px;
+}
+
+.component-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.component-card:hover .component-header .component-title {
+  color: #f44336;
+}
+
+.component-card .component-header {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title styling */
+.component-card .component-header .component-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.component-card .component-header .component-title:hover {
+  color: #f44336; /* Interactive hover color */
+}
+
+/* Body styling */
+.component-card .component-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+  width: 100%;
+}
+
+/* Scrollbar styling */
+.component-card .component-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.component-card .component-body::-webkit-scrollbar-thumb {
+  background-color: #cccccc36;
+  border-radius: 10px;
+}
+
+.component-card .component-body::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa36;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 992px) {
+  .component-card {
+    padding: 16px;
+    width: 100%;
+  }
+}

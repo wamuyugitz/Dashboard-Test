@@ -1,0 +1,24 @@
+.circle-progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-progress {
+  transform: rotate(-90deg); /* Rotates the circle to start from the top */
+}
+
+.circle-progress-bg {
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+.circle-progress-fg {
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.circle-progress-text {
+  font-size: 12px; /* Updated font size */
+  margin-top: 4px; /* Adjusted margin to fit with the smaller circle */
+}

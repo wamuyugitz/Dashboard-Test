@@ -1,0 +1,47 @@
+.component-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 8px;
+  background-color: #ffffff36;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.component-header:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.component-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  background-color: #f5f5f536;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.component-icon svg {
+  width: 18px;
+  height: 18px;
+  color: #5a5a5a;
+}
+
+.component-icon:hover {
+  background-color: #e6e6e636;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.component-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
